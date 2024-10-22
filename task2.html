@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,78 +12,140 @@
     />
   </head>
   <body>
-    <h1></h1>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Ducklang Tech"
+            width="40"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container my-5">
+        <h1 class="mb-4">Contact Us</h1>
+        <section>
+            <h2 class="mb-4">Our Team</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://cdn.britannica.com/92/100692-050-5B69B59B/Mallard.jpg" class="card-img-top" alt="Frederick's picture">
+                        <div class="card-body">
+                            <h5 class="card-title">Frederick</h5>
+                            <p class="card-text">Duck Resources</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="https://avatar.iran.liara.run/public/girl" class="card-img-top" alt="Jane Smith's picture">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text">Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <!--Contact Form-->
+    <div class="container">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1"
+            >Check me out</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </body>
-
-  <!--NAVBAR!-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Mr Ducklang</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="https://www.youtube.com/channel/UCx7F2fajKQP5xRBCGwIEUoA"
-              >Main Channel</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://www.youtube.com/channel/UCx7F2fajKQP5xRBCGwIEUoA"
-                  >Channel</a
-                >
-              </li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
 </html>
